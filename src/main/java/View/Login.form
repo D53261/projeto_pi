@@ -49,7 +49,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\J&#xfa;lia\OneDrive\Documentos\NetBeansProjects\pei\src\main\java\com\mycompany\pei\resources\botao_inicial_1.png"/>
+                  <Image iconType="3" name="/View/imagens/botao_inicial_1.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -71,7 +71,7 @@
             <Component class="javax.swing.JButton" name="jButton2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\J&#xfa;lia\OneDrive\Documentos\NetBeansProjects\pei\src\main\java\com\mycompany\pei\resources\botao_inicial_2.png"/>
+                  <Image iconType="3" name="/View/imagens/botao_inicial_2.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -126,7 +126,7 @@
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\J&#xfa;lia\OneDrive\Documentos\NetBeansProjects\pei\src\main\java\com\mycompany\pei\resources\linha.png"/>
+                  <Image iconType="3" name="/View/imagens/linha.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -138,7 +138,7 @@
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\J&#xfa;lia\OneDrive\Documentos\NetBeansProjects\pei\src\main\java\com\mycompany\pei\resources\logo.png"/>
+                  <Image iconType="3" name="/View/imagens/logo.png"/>
                 </Property>
                 <Property name="alignmentY" type="float" value="1.0"/>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -160,7 +160,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\J&#xfa;lia\OneDrive\Documentos\NetBeansProjects\pei\src\main\java\com\mycompany\pei\resources\bloco.png"/>
+                  <Image iconType="3" name="/View/imagens/bloco.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -172,7 +172,7 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\J&#xfa;lia\OneDrive\Documentos\NetBeansProjects\pei\src\main\java\com\mycompany\pei\resources\Imagem_de_fundo.png"/>
+                  <Image iconType="3" name="/View/imagens/Imagem_de_fundo.png"/>
                 </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[428, 333]"/>

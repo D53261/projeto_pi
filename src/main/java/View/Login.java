@@ -1,8 +1,10 @@
+package View;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.pei;
+
 
 /**
  *
@@ -42,7 +44,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Júlia\\OneDrive\\Documentos\\NetBeansProjects\\pei\\src\\main\\java\\com\\mycompany\\pei\\resources\\botao_inicial_1.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/botao_inicial_1.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -53,7 +55,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Júlia\\OneDrive\\Documentos\\NetBeansProjects\\pei\\src\\main\\java\\com\\mycompany\\pei\\resources\\botao_inicial_2.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/botao_inicial_2.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -75,20 +77,20 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setText("V.I.V.A");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Júlia\\OneDrive\\Documentos\\NetBeansProjects\\pei\\src\\main\\java\\com\\mycompany\\pei\\resources\\linha.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/linha.png"))); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 510, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Júlia\\OneDrive\\Documentos\\NetBeansProjects\\pei\\src\\main\\java\\com\\mycompany\\pei\\resources\\logo.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/logo.png"))); // NOI18N
         jLabel2.setAlignmentY(1.0F);
         jLabel2.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel2.setMinimumSize(new java.awt.Dimension(120, 120));
         jLabel2.setPreferredSize(new java.awt.Dimension(120, 120));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 90, 90));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Júlia\\OneDrive\\Documentos\\NetBeansProjects\\pei\\src\\main\\java\\com\\mycompany\\pei\\resources\\bloco.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/bloco.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 620));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Júlia\\OneDrive\\Documentos\\NetBeansProjects\\pei\\src\\main\\java\\com\\mycompany\\pei\\resources\\Imagem_de_fundo.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/Imagem_de_fundo.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(428, 333));
         jLabel1.setMinimumSize(new java.awt.Dimension(428, 333));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 850));
