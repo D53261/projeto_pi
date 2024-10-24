@@ -4,8 +4,6 @@
 
 package com.mycompany.pei;
 
-import conexao.Conexao;
-
 /**
  *
  * @author uept42-user
@@ -13,7 +11,6 @@ import conexao.Conexao;
 public class Pei {
 
     public static void main(String[] args) {
-        Conexao c = new Conexao();
-        c.getConexao();
+        System.out.println("Hello World!");
     }
 }
