@@ -4,6 +4,10 @@
  */
 package com.mycompany.pei;
 
+import java.sql.ResultSet;
+import mapbd.Confirma;
+import objetoacesso.ConfirmaDAO;
+
 /**
  *
  * @author uept42-user
@@ -11,7 +15,7 @@ package com.mycompany.pei;
 public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form Login
+     * Creates new form LoginInicial
      */
     public Login() {
         initComponents();
@@ -26,30 +30,97 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        btnregistrar = new javax.swing.JButton();
+        txtemail = new javax.swing.JTextField();
+        txtsenha = new javax.swing.JPasswordField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Downloads\\image 102 (1).png")); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setText("Não tem conta?");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 620, -1, -1));
+
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(0, 150, 0));
+        jButton1.setText("Registro");
         jButton1.setBorder(null);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 620, 60, 20));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Downloads\\image 103.png")); // NOI18N
-        jButton2.setBorder(null);
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, -1, -1));
+        btnregistrar.setBackground(new java.awt.Color(0, 100, 0));
+        btnregistrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnregistrar.setText("Registrar-se");
+        btnregistrar.setBorder(null);
+        btnregistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnregistrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnregistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 290, 40));
+
+        txtemail.setBackground(new java.awt.Color(255, 255, 255));
+        txtemail.setForeground(new java.awt.Color(100, 100, 100));
+        txtemail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtemail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtemailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 320, 30));
+
+        txtsenha.setBackground(new java.awt.Color(255, 255, 255));
+        txtsenha.setForeground(new java.awt.Color(0, 0, 0));
+        txtsenha.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtsenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtsenhaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtsenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 320, 30));
+
+        jLabel10.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("Senha:");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, -1, 20));
+
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setText("Email:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, 20));
+
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Login");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Documents\\projeto P.I (imagens)\\Rectangle 109.png")); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 430));
+
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Valorização e Iniciativas para um Ambiente Sustentável");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("V.I.V.A");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Downloads\\Ellipse 19.png")); // NOI18N
         jLabel2.setAlignmentY(1.0F);
@@ -58,30 +129,36 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setPreferredSize(new java.awt.Dimension(120, 120));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 90, 90));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Downloads\\Line 4.png")); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 540, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("V.I.V.A");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Downloads\\Rectangle 117.png")); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 660));
-
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Valorização e Iniciativas para um Ambiente Sustentável");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
-
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\uept42-user\\Downloads\\Rectangle 118.png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 420, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 420, 910));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtemailActionPerformed
+
+    private void txtsenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtsenhaActionPerformed
+
+    private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
+        String email = txtemail.getText();
+        char[] senhachar = txtsenha.getPassword();
+        String senha = new String(senhachar);
+        Confirma confirma = new Confirma();
+        confirma.setEmail(email);
+        confirma.setSenha(senha);
+        ConfirmaDAO confirmaDAO = new ConfirmaDAO();
+        confirmaDAO.autenticar(confirma);
+    }//GEN-LAST:event_btnregistrarActionPerformed
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Registro registro = new Registro();
+        registro.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -110,6 +187,7 @@ public class Login extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -120,13 +198,18 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnregistrar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField txtemail;
+    private javax.swing.JPasswordField txtsenha;
     // End of variables declaration//GEN-END:variables
 }
