@@ -5,3 +5,5 @@
 * Netbeans
 * Figma
 * MySQL
+* XML
+
