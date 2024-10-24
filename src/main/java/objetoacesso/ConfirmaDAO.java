@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this jiromba
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package objetoacesso;
 
 import com.mycompany.pei.Login;
@@ -14,10 +10,6 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import mapbd.Confirma;
 
-/**
- *
- * @author uept42-user
- */
 public class ConfirmaDAO {
     private Conexao conexao;
     private Connection conn;
